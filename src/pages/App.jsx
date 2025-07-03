@@ -1,11 +1,21 @@
-import React from 'react';
-import Latihan from './Latihan';
+import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import Materi from './Materi'
+import Latihan from './Latihan'
+import Diskusi from './Diskusi'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <h1 className="text-3xl font-bold mb-4 text-center">Latihan Pertidaksamaan Linear</h1>
-      <Latihan />
+    <div>
+      <Navbar />
+      <div className="p-4 max-w-screen-xl mx-auto">
+        <Routes>
+          <Route path="/" element={<Materi />} />
+          <Route path="/latihan" element={<Latihan />} />
+          <Route path="/diskusi" element={<Diskusi />} />
+        </Routes>
+      </div>
     </div>
-  );
+  )
 }

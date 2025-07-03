@@ -1,5 +1,5 @@
 {
-  "name": "pertidaksamaan-linear",
+  "name": "pertidaksamaan-linear-full",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,8 @@
   "dependencies": {
     "mathlive": "^0.96.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2"
   },
   "devDependencies": {
     "vite": "^4.5.0",
